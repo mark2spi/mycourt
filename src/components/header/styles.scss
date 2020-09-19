@@ -1,0 +1,36 @@
+header {
+  display: flex !important;
+  flex-direction: column;
+  height: 100px;
+  padding: 0 20px;
+  background-color: #366B26;
+
+  .loggedin-user {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+
+    img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      border-radius: 40px;
+      border: 2px solid white;
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+
+    .nav-item {
+      color: white;
+  
+      &.active {
+        border-bottom: 3px solid #00C155;
+      }
+    }
+  }
+}
