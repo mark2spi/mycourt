@@ -1,0 +1,108 @@
+.reserve {
+  position: relative;
+  height: calc(100vh - 100px);
+
+  .club {
+    position: relative;
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid #E7EAEF;
+
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 80px;
+      margin-right: 20px;
+      border-radius: 5px;
+      border: 1px solid #CED2D8;
+    }
+
+    .detail {
+      .name {
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      .location {
+        display: flex;
+
+        img {
+          margin-right: 10px;
+        }
+      }
+
+      .sport {
+        display: flex;
+
+        img {
+          margin-right: 5px;
+        }
+      }
+    }
+
+    i {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+    }
+  }
+
+  .reserve-field {
+    position: relative;
+    padding: 15px 20px;
+    border-bottom: 1px solid #E7EAEF;
+
+    i {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      margin-top: 3px;
+    }
+  }
+
+  .reserve-content {
+    padding: 20px;
+  
+    .btn-search {
+      width: 100%;
+      height: 46px;
+      line-height: 46px;
+      text-align: center;
+      color: white;
+      border-radius: 6px;
+      background-color: #469C2C;
+    }
+
+    .reserve-tip {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100px;
+      margin-top: 20px;
+      font-size: 14px;
+      background-color: #E7EAEF;
+      border-radius: 6px;
+
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .reserve-link {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+
+    span {
+      color: #469C2C;
+      text-decoration: underline;
+    }
+  }
+}

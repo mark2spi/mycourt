@@ -22,7 +22,7 @@ const Clubs = ({ history }) => {
               {actives.map((active, index) => <img key={index} src={require(`@/assets/images/icons/${active}.svg`)} alt="Sports" />)}
             </div>
           </div>
-          <span className="icon-arrow">&gt;</span>
+          <i className="arrow right" />
         </div>
       ))}
 
