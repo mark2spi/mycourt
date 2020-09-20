@@ -1,15 +1,23 @@
-import React, { useState } from 'react'
-import { useHistory } from 'react-router-dom'
+import React from 'react'
+import { Switch, Route } from 'react-router-dom'
 
 import Clubs from './clubs'
+import Reserve from './reserve'
+import Bookings from './bookings'
+import ClubDetail from './clubs/detail'
 import { Header } from '@/components'
 
 const Home = () => {
-  const [activeNav, setActiveNav] = useState('clubs')
   return (
     <div>
-      <Header activeNav={activeNav} onChangeNav={activeNav => setActiveNav(activeNav)} />
-      {activeNav === 'clubs' && <Clubs />}
+      <Header />
+      <Switch>
+        <Route path="/clubs/detail/:id" component={ClubDetail} />
+        <Route path="/clubs" component={Clubs} />
+        <Route path="/reserve" component={Reserve} />
+        <Route path="/bookings" component={Bookings} />
+        <Route exact path="/" component={Clubs} />
+      </Switch>
     </div>
   )
 }

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Allmänna TK Lund",
+    "location": "Lovisastigen 2-4, Lund",
+    "actives": ["badminton", "pool", "tennis", "tennis"]
+  },
+  {
+    "id": 2,
+    "name": "Allmänna TK Lund",
+    "location": "Box 607, Danderyd",
+    "actives": ["tennis", "tennis"]
+  },
+  {
+    "id": 3,
+    "name": "Fågelbro G&CC",
+    "location": "Fågelbrovägen 11-15, Värmdö",
+    "actives": ["tennis", "tennis"]
+  },
+  {
+    "id": 4,
+    "name": "Fyrisfjädern",
+    "location": "Badmintonstigen 1, Uppsala",
+    "actives": ["badminton"]
+  },
+  {
+    "id": 5,
+    "name": "KLTK",
+    "location": "Lidingövägen 25, Stockholm",
+    "actives": ["badminton"]
+  }
+]

@@ -1,10 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import cx from 'classnames'
+import { useHistory } from 'react-router-dom'
 
 import { srcAvatar } from '@/assets'
 import './styles.scss'
 
-const Header = ({ activeNav, onChangeNav}) => {
+const Header = () => {
+  const history = useHistory()
+  const { location: { pathname } } = history
   return (
     <header>
       <div className="loggedin-user">
@@ -12,9 +15,9 @@ const Header = ({ activeNav, onChangeNav}) => {
         Johan Andersson
       </div>
       <nav>
-        <div className={cx('nav-item', { active: activeNav === 'clubs' })} onClick={() => onChangeNav('clubs')}>Clubs</div>
-        <div className={cx('nav-item', { active: activeNav === 'reserve' })} onClick={() => onChangeNav('reserve')}>Reserve</div>
-        <div className={cx('nav-item', { active: activeNav === 'bookings' })} onClick={() => onChangeNav('bookings')}>My bookings</div>
+        <div className={cx('nav-item', { active: pathname.match('clubs') })} onClick={() => history.push('/clubs')}>Clubs</div>
+        <div className={cx('nav-item', { active: pathname.match('reserve') })} onClick={() => history.push('/reserve')}>Reserve</div>
+        <div className={cx('nav-item', { active: pathname.match('bookings') })} onClick={() => history.push('/bookings')}>My bookings</div>
       </nav>
     </header>
   )

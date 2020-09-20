@@ -1,8 +1,6 @@
 import React from 'react'
-import { useHistory } from 'react-router-dom'
 
-const Register = () => {
-  const history = useHistory()
+const Register = ({ history }) => {
   const onSubmit = () => {
     localStorage.setItem('isLoggedIn', true)
     history.push('/')

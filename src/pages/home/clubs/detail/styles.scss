@@ -1,0 +1,154 @@
+.club-detail {
+  height: calc(100vh - 100px);
+  
+  .club-detail-content {
+    position: relative;
+    height: calc(100% - 126px);
+    overflow: auto;
+  
+    .logo-container {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 80px;
+      margin-right: 20px;
+      border-radius: 5px;
+      border: 1px solid #CED2D8;
+      background-color: white;
+      box-shadow: 0 1px 2px 0 rgba(37,40,37,0.12);
+    }
+  
+    .name {
+      padding-top: 25px;
+      padding-left: 120px;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  
+    .details {
+      width: 95%;
+      padding: 10px 20px 10px 120px;
+      background: #EBF4E8;
+      border-radius: 0 15px 15px 0;
+      
+      .detail-item {
+        display: flex;
+        margin-bottom: 5px;
+        color: #555F51;
+  
+        img {
+          margin-right: 10px;
+        }
+      }
+    }
+  
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px 20px 10px;
+      border-bottom: 1px solid #E7EAEF;
+  
+      .tag {
+        padding: 10px 17px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        border-radius: 6px;
+        color: #5B5E62;
+        background-color: #E7EAEF;
+  
+        &.active {
+          color: white;
+          background-color: #469C2C;
+        }
+      }
+    }
+  
+    .friends {
+      padding: 20px;
+  
+      .friend-list {
+        width: 100%;
+        padding: 10px 20px;
+        color: #366B26;
+        border: 1px solid #366B26;
+        border-radius: 6px;
+        
+        img {
+          margin-right: 10px;
+        }
+  
+        &.noFriends {
+          border: none;
+          color: #5B5E62;
+          background-color: #E7EAEF;
+        }
+  
+        .friend {
+          display: flex;
+          margin-top: 10px;
+  
+          .member {
+            width: 40%;
+            padding: 0 17px;
+            line-height: 40px;
+            color: #5B5E62;
+            background-color: #E7EAEF;
+            border-radius: 6px;
+          }
+  
+          input {
+            width: 60%;
+            margin: 0 10px;
+            padding: 0 17px;
+            line-height: 40px;
+            color: #5B5E62;
+            background-color: #E7EAEF;
+            border-radius: 6px;
+            border: none;
+          }
+  
+          .btn-add {
+            flex: 0 0 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: white;
+            background-color: #469C2C;
+            border-radius: 6px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.3);
+
+    .terms {
+      margin-bottom: 15px;
+      span {
+        color: #366B26;
+      }
+    }
+
+    .btn-book {
+      display: block;
+      padding: 10px 0;
+      font-size: 18px;
+      color: white;
+      background-color: #469C2C;
+      border-radius: 6px;
+    }
+  }
+}
