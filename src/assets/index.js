@@ -9,5 +9,7 @@ export { default as srcClub5 } from './images/clubs/5.png'
 export { default as iconLocation } from './images/icons/location.svg'
 export { default as iconBadminton } from './images/icons/badminton.svg'
 export { default as iconTennis } from './images/icons/tennis.svg'
-export { default as iconPool } from './images/icons/pool.svg'
+export { default as iconBowling } from './images/icons/bowling.svg'
 export { default as iconExclamationMark } from './images/icons/exclamation-mark.svg'
+
+export { default as bgWelcome } from './images/bg-welcome.png'

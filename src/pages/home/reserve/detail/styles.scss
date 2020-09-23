@@ -1,0 +1,117 @@
+.reserve-detail {
+  position: relative;
+  height: calc(100vh - 100px);
+
+  .club {
+    position: relative;
+    display: flex;
+    padding: 20px;
+
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 80px;
+      margin-right: 20px;
+      border-radius: 5px;
+      border: 1px solid #CED2D8;
+    }
+
+    .detail {
+      .name {
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      .detail-field {
+        display: flex;
+        color: #555F51;
+
+        img {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .reserve-field {
+    position: relative;
+    padding: 15px 20px;
+    border-bottom: 1px solid #E7EAEF;
+
+    i {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      margin-top: 3px;
+    }
+  }
+
+  .reserve-tip {
+    display: flex;
+    margin: 0 20px 20px;
+    padding: 15px 20px;
+    background: #E7EAEF;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #5B5E62;
+
+    img {
+      margin-right: 10px;
+    }
+  }
+
+  .reserve-subTitle {
+    padding: 0 20px;
+    font-size: 18px;
+  }
+
+  .reserve-slots {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+
+    &::after {
+      content: "";
+      width: 18%;
+    }
+
+    .reserve-slot {
+      display: inline-block;
+      background: #E7EAEF;
+      border-radius: 6px;
+      width: 18%;
+      padding: 8px 15px;
+      margin-bottom: 8px;
+
+      &.active {
+        background-color: #00C155;
+        color: white;
+      }
+
+      &.disable {
+        position: relative;
+        overflow: hidden;
+
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          z-index: 1;
+        }
+        &::before {
+          background: linear-gradient(to top right, transparent calc(50% - 1px), #aaa, transparent calc(50% + 1px));
+        }
+        &::after {
+          background: linear-gradient(to top left, transparent calc(50% - 1px), #aaa, transparent calc(50% + 1px));
+        }
+      }
+    }
+  }
+}

@@ -10,7 +10,7 @@ const { id, name, location } = CLUBS[4]
 const Reserve = ({ history }) => {
   return (
     <div className="reserve">
-      <div className="club" onClick={() => history.push(`/clubs/detail/${id}`)}>
+      <div className="club">
         <div className="logo-container">
           <img src={require(`@/assets/images/clubs/${id}.png`)} alt={name} />
         </div>
@@ -29,7 +29,7 @@ const Reserve = ({ history }) => {
       <div className="reserve-field">Friday 20 March <i className="arrow down" /></div>
       <div className="reserve-field">No coach selected <i className="arrow down" /></div>
       <div className="reserve-content">
-        <div className="btn-search">Search for available courses</div>
+        <div className="btn-search" onClick={() => history.push(`/reserve/detail/${id}`)}>Search for available courses</div>
         <div className="reserve-tip">
           <img src={iconExclamationMark} alt="exclamation-mark" />There are no activities available on this day
         </div>

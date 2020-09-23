@@ -51,7 +51,7 @@ const ClubDetail = ({ match: { params }, history }) => {
         <div className="terms">
           <Checkbox label={<>I accept the <span>Terms and Conditions</span></>} />
         </div>
-        <div className="btn-book" onClick={() => history.push('/clubs')}>Book this course</div>
+        <div className="btn-book" onClick={() => history.push('/welcome')}>Book this course</div>
       </div>
     </div>
   )
