@@ -13,3 +13,4 @@ export { default as iconBowling } from './images/icons/bowling.svg'
 export { default as iconExclamationMark } from './images/icons/exclamation-mark.svg'
 
 export { default as bgWelcome } from './images/bg-welcome.png'
+export { default as srcLogo } from './images/logo.png'
